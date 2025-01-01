@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/example"
+        layout="@layout/item_news" />
+
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/press_to_loading_finish"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="color" />
+
+            <RadioButton
+                android:id="@+id/alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alpha" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shimmer" />
+
+            <RadioButton
+                android:id="@+id/load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/preset_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/settings_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/preset_button0"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/preset_button1"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/preset_button2"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/preset_button3"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/preset_button4"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/preset_button5"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/preset_button6"
+                style="@style/thin.white.small.button"
+                android:gravity="center"
+                android:text="Off" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="List"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Grid" />
+</LinearLayout>

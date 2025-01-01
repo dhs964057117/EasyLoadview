@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">com.dhs.tools.loadview</string>
+    <string name="title">Google正式发布Android8.0</string>
+    <string name="content">2017-09-01 Google正式发布Android8.0系统，此次系统命名为O，除了优化性能提高整体系统流畅度外，还新增了一些特性...</string>
+    <string name="link">www.google.com/news</string>
+    <string name="press_to_loading_finish">press to loading finish</string>
+    <string name="press_to_loading">press to loading</string>
+</resources>
