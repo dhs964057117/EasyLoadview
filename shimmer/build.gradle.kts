@@ -65,17 +65,5 @@ publishing {
             }
         }
     }
-
-    repositories {
-        maven {
-            url = uri("https://www.xxxxx.com/")  // 填写自己的maven地址
-            name = "MyRelease"  // 这个是Repository名称，即远端仓库的名称，这个根据自己喜好命名
-            isAllowInsecureProtocol = true  // 如果url是http,需要填上这个，如果是https，则可以不填
-            credentials {
-                username = "mUserName"  // maven仓库的用户名称
-                password = "mPassword"  // maven仓库的密码
-            }
-        }
-    }
 }
 
